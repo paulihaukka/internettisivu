@@ -1,0 +1,27 @@
+/* Tyylit koko sivulle */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Otsikko */
+h1 {
+    color: #087a47;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Tekstit */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Kuva */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
