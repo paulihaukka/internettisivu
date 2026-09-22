@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 3: JavaScript Events</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main class="ws3">
+        <header class="page-header">
+            <h1 id="exercise1Heading">Workshop 3: JavaScript Events</h1>
+            <p>Interactive JavaScript event exercises.</p>
+            <img class="animal-image" src="img/lepakko.jpg" alt="A bat">
+        </header>
+        <section class="exercise">
+            <h2>Animal table</h2>
+            <button type="button" onclick="alert('You clicked me!')">Click me</button>
+            <button type="button" onclick="showTable()">Show Animal table</button>
+            <div id="tableContainer" aria-live="polite"></div>
+        </section>
+        <section class="exercise">
+            <h2 id="exercise2Heading">Mouse events</h2>
+            <p id="exercise2Message" class="status-message" aria-live="polite"></p>
+        </section>
+        <section class="exercise">
+            <h2>Feedback</h2>
+            <form id="feedbackForm">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" maxlength="200" rows="5" placeholder="Write your feedback here..."></textarea>
+                <p id="status" class="status-message" aria-live="polite"></p>
+                <p id="charcount">0/200</p>
+                <button type="submit">Send</button>
+            </form>
+            <div id="preview" class="preview">The preview will appear here</div>
+        </section>
+        <section class="exercise">
+            <h2>Keyboard events</h2>
+            <p id="keyinfo" class="key-info">Key: - | Code: -</p>
+            <div id="keybox" class="key-box">Press any key...</div>
+            <p id="keycount">Key presses: 0</p>
+            <p id="modifierinfo">Shift: no | Ctrl: no | Alt: no</p>
+        </section>
+        <section class="exercise">
+            <h2>Maps and geolocation</h2>
+            <a class="map-link" href="https://www.google.com/maps?q=60.1699,24.9384" target="_blank" rel="noopener">Open Helsinki in Google Maps</a>
+            <button id="locationButton" type="button">Find my location</button>
+            <p id="locationStatus" class="status-message" aria-live="polite"></p>
+        </section>
+    </main>
+</body>
+</html>

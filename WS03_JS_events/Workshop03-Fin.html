@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Työpaja 3: JavaScript-tapahtumat</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main class="ws3">
+        <header class="page-header">
+            <h1 id="exercise1Heading">Työpaja 3: JavaScript-tapahtumat</h1>
+            <p>JavaScript-tapahtumien interaktiiviset harjoitukset.</p>
+            <img class="animal-image" src="img/lepakko.jpg" alt="Lepakko">
+        </header>
+        <section class="exercise">
+            <h2>Eläintaulukko</h2>
+            <button type="button" onclick="alert('You clicked me!')">Paina minua</button>
+            <button type="button" onclick="showTable()">Näytä eläintaulukko</button>
+            <div id="tableContainer" aria-live="polite"></div>
+        </section>
+        <section class="exercise">
+            <h2 id="exercise2Heading">Hiiritapahtumat</h2>
+            <p id="exercise2Message" class="status-message" aria-live="polite"></p>
+        </section>
+        <section class="exercise">
+            <h2>Palaute</h2>
+            <form id="feedbackForm">
+                <label for="feedback">Palaute:</label>
+                <textarea id="feedback" name="feedback" maxlength="200" rows="5" placeholder="Kirjoita palautteesi tähän..."></textarea>
+                <p id="status" class="status-message" aria-live="polite"></p>
+                <p id="charcount">0/200</p>
+                <button type="submit">Lähetä</button>
+            </form>
+            <div id="preview" class="preview">Esikatselu tulee tähän</div>
+        </section>
+        <section class="exercise">
+            <h2>Näppäimistötapahtumat</h2>
+            <p id="keyinfo" class="key-info">Key: - | Code: -</p>
+            <div id="keybox" class="key-box">Paina mitä tahansa näppäintä...</div>
+            <p id="keycount">Key presses: 0</p>
+            <p id="modifierinfo">Shift: no | Ctrl: no | Alt: no</p>
+        </section>
+        <section class="exercise">
+            <h2>Kartta ja sijainti</h2>
+            <a class="map-link" href="https://www.google.com/maps?q=60.1699,24.9384" target="_blank" rel="noopener">Avaa Helsinki Google Mapsissa</a>
+            <button id="locationButton" type="button">Etsi sijaintini</button>
+            <p id="locationStatus" class="status-message" aria-live="polite"></p>
+        </section>
+    </main>
+</body>
+</html>

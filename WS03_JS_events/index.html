@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 3: JavaScript Events</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main class="ws3">
+        <header class="page-header">
+            <h1 id="exercise1Heading">Workshop 3: JavaScript Events</h1>
+            <p>Practise responding to clicks, mouse movement, input, form submission, and keyboard events.</p>
+            <img class="animal-image" src="img/lepakko.jpg" alt="A bat">
+        </header>
+
+        <section class="exercise" aria-labelledby="exercise1Heading">
+            <h2>Exercise 1: Basic Click Events</h2>
+            <button type="button" onclick="alert('You clicked me!')">Click me</button>
+            <button type="button" onclick="showTable()">Show Animal table</button>
+            <div id="tableContainer" aria-live="polite"></div>
+        </section>
+
+        <section class="exercise" aria-labelledby="exercise2Heading">
+            <h2 id="exercise2Heading">Exercise 2: Event Listeners and DOM Manipulation</h2>
+            <p>Move your mouse over the heading, then click the main heading above.</p>
+            <p id="exercise2Message" class="status-message" aria-live="polite"></p>
+        </section>
+
+        <section class="exercise" aria-labelledby="exercise3Heading">
+            <h2 id="exercise3Heading">Exercise 3 and 4: Feedback Form</h2>
+            <p>Focus the textarea, type feedback, and submit the form.</p>
+            <form id="feedbackForm">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" maxlength="200" rows="5" placeholder="Write your feedback here..."></textarea>
+                <p id="status" class="status-message" aria-live="polite"></p>
+                <p id="charcount">0/200</p>
+                <button type="submit">Send</button>
+            </form>
+            <h3>Preview</h3>
+            <div id="preview" class="preview">The preview will appear here</div>
+        </section>
+
+        <section class="exercise" aria-labelledby="exercise5Heading">
+            <h2 id="exercise5Heading">Exercise 5: Keyboard Events</h2>
+            <p>Press any key to see the key and its code.</p>
+            <p id="keyinfo" class="key-info">Key: - | Code: -</p>
+            <div id="keybox" class="key-box">Press any key...</div>
+            <p id="keycount">Key presses: 0</p>
+            <p id="modifierinfo">Shift: no | Ctrl: no | Alt: no</p>
+        </section>
+
+        <section class="exercise" aria-labelledby="bonusHeading">
+            <h2 id="bonusHeading">Bonus: Google Maps and Geolocation</h2>
+            <a class="map-link" href="https://www.google.com/maps?q=60.1699,24.9384" target="_blank" rel="noopener">Open Helsinki in Google Maps</a>
+            <button id="locationButton" type="button">Find my location</button>
+            <p id="locationStatus" class="status-message" aria-live="polite"></p>
+        </section>
+    </main>
+</body>
+</html>
